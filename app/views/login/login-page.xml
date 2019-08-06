@@ -14,8 +14,8 @@
         secure="true"
         text="{{ password }}"
       />
-      <Button text="Entrar" tap="singIn"/>
-      <Button text="Cadastrar" tap="singUp"/>
+      <Button text="Entrar" tap="signIn"/>
+      <Button text="Cadastrar" tap="signUp"/>
     </StackLayout>
   </FlexboxLayout>
 </Page>

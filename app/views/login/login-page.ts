@@ -11,7 +11,7 @@ const loaded = (args: EventData) => {
   page.bindingContext = user;
 }
 
-const singIn = (args: EventData) => {
+const signIn = (args: EventData) => {
   const button = <Button> args.object;
   const page = <Page> button.page;
   const viewModal = button.showModal('views/loading/loading-modal', {
@@ -35,7 +35,7 @@ const singIn = (args: EventData) => {
     .catch(() => viewModal.closeModal());
 }
 
-const singUp = (args: EventData) => {
+const signUp = (args: EventData) => {
   const button = <Button> args.object;
   const viewModal = button.showModal('views/loading/loading-modal', {
     context: null,
@@ -55,4 +55,4 @@ const singUp = (args: EventData) => {
     .catch(() => viewModal.closeModal());
 }
 
-export { loaded, user, singIn, singUp }
+export { loaded, user, signIn, signUp }
