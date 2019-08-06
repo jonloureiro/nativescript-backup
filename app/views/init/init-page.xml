@@ -1,5 +1,6 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
     <FlexboxLayout>
-        <ActivityIndicator busy="true" />
+        <ActivityIndicator busy="true"/>
+        <Label text="Testando Conexão" />
     </FlexboxLayout>
 </Page>
