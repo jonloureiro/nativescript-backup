@@ -1,0 +1,11 @@
+<TabView selectedIndex="0">
+    <TabViewItem title="Home">
+        <Frame id="home" defaultPage="views/tabview/home/home-page" />
+    </TabViewItem>
+    <TabViewItem title="Residence">
+        <Frame id="residence" defaultPage="views/tabview/residence/residence-page" />
+    </TabViewItem>
+    <TabViewItem title="Account">
+        <Frame id="account" defaultPage="views/tabview/account/account-page" />
+    </TabViewItem>
+</TabView>

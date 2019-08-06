@@ -1,8 +1,9 @@
 import { Page } from 'tns-core-modules/ui/page';
 import { EventData, fromObject } from "tns-core-modules/data/observable";
 import { init } from '../../view-models/user';
+import * as application from "tns-core-modules/application";
 
-export function navigatingTo(args: EventData) {
+export function loaded(args: EventData) {
   const labelText = fromObject({
     message: 'Testando conexão'
   });
@@ -13,7 +14,10 @@ export function navigatingTo(args: EventData) {
   init()
     .then((isLoggingIn: boolean): void => {
       if (isLoggingIn) {
-
+        application._resetRootView({
+          moduleName: 'views/tabview/tabview-page',
+          clearHistory: true
+        })
       } else {
         page.frame.navigate({
           moduleName: 'views/login/login-page',

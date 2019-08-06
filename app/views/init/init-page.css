@@ -3,3 +3,7 @@ FlexboxLayout {
   align-items: center;
   justify-content: center;
 }
+
+Label {
+  margin-top: 16;
+}
