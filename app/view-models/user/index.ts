@@ -35,10 +35,18 @@ const login = async (email: string, password: string): Promise<boolean> => {
   return response.status === 200;
 }
 
+const logout = async (): Promise<boolean> => {
+  const response = await fetch(`${AUTH_URL}/logout`, {
+    method: "POST",
+  });
+  return response.status === 200;
+}
+
 
 export {
   user,
   init,
   register,
   login,
+  logout,
 };
