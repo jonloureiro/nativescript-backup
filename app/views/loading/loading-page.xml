@@ -1,0 +1,5 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+    <FlexboxLayout>
+        <ActivityIndicator busy="true" />
+    </FlexboxLayout>
+</Page>

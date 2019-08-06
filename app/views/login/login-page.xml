@@ -1,0 +1,21 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" class="page">
+  <FlexboxLayout>
+    <StackLayout class="form">
+      <Label text="Smart Plug"/>
+      <TextField
+        hint="Email"
+        keyboardType="email"
+        autocorrect="false"
+        autocapitalizationType="none"
+        text="{{ email }}"
+      />
+      <TextField
+        hint="Senha"
+        secure="true"
+        text="{{ password }}"
+      />
+      <Button text="Entrar" tap="singIn"/>
+      <Button text="Cadastrar" tap="singUp"/>
+    </StackLayout>
+  </FlexboxLayout>
+</Page>

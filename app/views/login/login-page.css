@@ -1,0 +1,19 @@
+FlexboxLayout {
+  justify-content: center;
+  align-items: center;
+}
+
+StackLayout {
+  width: 300;
+  padding: 16;
+}
+
+Button, TextField {
+  margin-bottom: 8;
+}
+
+Label {
+  font-size: 28;
+  text-align: center;
+  font-weight: 500;
+}
