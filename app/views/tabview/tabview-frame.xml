@@ -1,4 +1,4 @@
-<TabView selectedIndex="0">
+<TabView selectedIndex="0" loaded="loaded">
     <TabViewItem title="Home">
         <Frame id="home" defaultPage="views/tabview/home/home-page" />
     </TabViewItem>

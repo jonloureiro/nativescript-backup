@@ -27,7 +27,7 @@ const singIn = (args: EventData) => {
       viewModal.closeModal();
       if (sucess) {
         application._resetRootView({
-          moduleName: 'views/tabview/tabview-page',
+          moduleName: 'views/tabview/tabview-frame',
           clearHistory: true
         })
       } /* TODO: ELSE */

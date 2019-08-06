@@ -15,7 +15,7 @@ export function loaded(args: EventData) {
     .then((isLoggingIn: boolean): void => {
       if (isLoggingIn) {
         application._resetRootView({
-          moduleName: 'views/tabview/tabview-page',
+          moduleName: 'views/tabview/tabview-frame',
           clearHistory: true
         })
       } else {
